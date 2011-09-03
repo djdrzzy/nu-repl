@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15F5F0BF1411B84C00D0C295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0BE1411B84C00D0C295 /* UIKit.framework */; };
+		15F5F0C11411B84C00D0C295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C01411B84C00D0C295 /* Foundation.framework */; };
+		15F5F0C31411B84C00D0C295 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */; };
+		15F5F0C91411B84C00D0C295 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15F5F0C71411B84C00D0C295 /* InfoPlist.strings */; };
+		15F5F0CB1411B84C00D0C295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F5F0CA1411B84C00D0C295 /* main.m */; };
+		15F5F0CF1411B84C00D0C295 /* nu_replAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F5F0CE1411B84C00D0C295 /* nu_replAppDelegate.m */; };
+		15F5F0D21411B84C00D0C295 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F5F0D01411B84C00D0C295 /* MainWindow.xib */; };
+		15F5F0D51411B84C00D0C295 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F5F0D41411B84C00D0C295 /* RootViewController.m */; };
+		15F5F0D81411B84C00D0C295 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F5F0D61411B84C00D0C295 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15F5F0BA1411B84C00D0C295 /* nu-repl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nu-repl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F5F0BE1411B84C00D0C295 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		15F5F0C01411B84C00D0C295 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15F5F0C61411B84C00D0C295 /* nu-repl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nu-repl-Info.plist"; sourceTree = "<group>"; };
+		15F5F0C81411B84C00D0C295 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		15F5F0CA1411B84C00D0C295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15F5F0CC1411B84C00D0C295 /* nu-repl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nu-repl-Prefix.pch"; sourceTree = "<group>"; };
+		15F5F0CD1411B84C00D0C295 /* nu_replAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nu_replAppDelegate.h; sourceTree = "<group>"; };
+		15F5F0CE1411B84C00D0C295 /* nu_replAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nu_replAppDelegate.m; sourceTree = "<group>"; };
+		15F5F0D11411B84C00D0C295 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		15F5F0D31411B84C00D0C295 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		15F5F0D41411B84C00D0C295 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		15F5F0D71411B84C00D0C295 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15F5F0B71411B84C00D0C295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F5F0BF1411B84C00D0C295 /* UIKit.framework in Frameworks */,
+				15F5F0C11411B84C00D0C295 /* Foundation.framework in Frameworks */,
+				15F5F0C31411B84C00D0C295 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15F5F0AF1411B84C00D0C295 = {
+			isa = PBXGroup;
+			children = (
+				15F5F0C41411B84C00D0C295 /* nu-repl */,
+				15F5F0BD1411B84C00D0C295 /* Frameworks */,
+				15F5F0BB1411B84C00D0C295 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15F5F0BB1411B84C00D0C295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15F5F0BA1411B84C00D0C295 /* nu-repl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15F5F0BD1411B84C00D0C295 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15F5F0BE1411B84C00D0C295 /* UIKit.framework */,
+				15F5F0C01411B84C00D0C295 /* Foundation.framework */,
+				15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15F5F0C41411B84C00D0C295 /* nu-repl */ = {
+			isa = PBXGroup;
+			children = (
+				15F5F0CD1411B84C00D0C295 /* nu_replAppDelegate.h */,
+				15F5F0CE1411B84C00D0C295 /* nu_replAppDelegate.m */,
+				15F5F0D01411B84C00D0C295 /* MainWindow.xib */,
+				15F5F0D31411B84C00D0C295 /* RootViewController.h */,
+				15F5F0D41411B84C00D0C295 /* RootViewController.m */,
+				15F5F0D61411B84C00D0C295 /* RootViewController.xib */,
+				15F5F0C51411B84C00D0C295 /* Supporting Files */,
+			);
+			path = "nu-repl";
+			sourceTree = "<group>";
+		};
+		15F5F0C51411B84C00D0C295 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15F5F0C61411B84C00D0C295 /* nu-repl-Info.plist */,
+				15F5F0C71411B84C00D0C295 /* InfoPlist.strings */,
+				15F5F0CA1411B84C00D0C295 /* main.m */,
+				15F5F0CC1411B84C00D0C295 /* nu-repl-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15F5F0B91411B84C00D0C295 /* nu-repl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F5F0DB1411B84C00D0C295 /* Build configuration list for PBXNativeTarget "nu-repl" */;
+			buildPhases = (
+				15F5F0B61411B84C00D0C295 /* Sources */,
+				15F5F0B71411B84C00D0C295 /* Frameworks */,
+				15F5F0B81411B84C00D0C295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nu-repl";
+			productName = "nu-repl";
+			productReference = 15F5F0BA1411B84C00D0C295 /* nu-repl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15F5F0B11411B84C00D0C295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Soma Creates";
+			};
+			buildConfigurationList = 15F5F0B41411B84C00D0C295 /* Build configuration list for PBXProject "nu-repl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 15F5F0AF1411B84C00D0C295;
+			productRefGroup = 15F5F0BB1411B84C00D0C295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15F5F0B91411B84C00D0C295 /* nu-repl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15F5F0B81411B84C00D0C295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F5F0C91411B84C00D0C295 /* InfoPlist.strings in Resources */,
+				15F5F0D21411B84C00D0C295 /* MainWindow.xib in Resources */,
+				15F5F0D81411B84C00D0C295 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15F5F0B61411B84C00D0C295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F5F0CB1411B84C00D0C295 /* main.m in Sources */,
+				15F5F0CF1411B84C00D0C295 /* nu_replAppDelegate.m in Sources */,
+				15F5F0D51411B84C00D0C295 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15F5F0C71411B84C00D0C295 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15F5F0C81411B84C00D0C295 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		15F5F0D01411B84C00D0C295 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15F5F0D11411B84C00D0C295 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		15F5F0D61411B84C00D0C295 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15F5F0D71411B84C00D0C295 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15F5F0D91411B84C00D0C295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		15F5F0DA1411B84C00D0C295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15F5F0DC1411B84C00D0C295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nu-repl/nu-repl-Prefix.pch";
+				INFOPLIST_FILE = "nu-repl/nu-repl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		15F5F0DD1411B84C00D0C295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nu-repl/nu-repl-Prefix.pch";
+				INFOPLIST_FILE = "nu-repl/nu-repl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15F5F0B41411B84C00D0C295 /* Build configuration list for PBXProject "nu-repl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F5F0D91411B84C00D0C295 /* Debug */,
+				15F5F0DA1411B84C00D0C295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F5F0DB1411B84C00D0C295 /* Build configuration list for PBXNativeTarget "nu-repl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F5F0DC1411B84C00D0C295 /* Debug */,
+				15F5F0DD1411B84C00D0C295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15F5F0B11411B84C00D0C295 /* Project object */;
+}
