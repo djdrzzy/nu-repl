@@ -1,0 +1,6 @@
+[submodule "lib/rmi"]
+	path = lib/rmi
+	url = git@github.com:djdrzzy/rmi.git
+[submodule "lib/nu"]
+	path = lib/nu
+	url = git://github.com/timburks/nu.git
