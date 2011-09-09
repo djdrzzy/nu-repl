@@ -25,8 +25,9 @@
 -(NSString*) remoteMessageInterface:(RemoteMessageInterface*)interface
                     receivedMessage:(NSString*)message {
     
-    id parser = [Nu parser];
+    id parser = [Nu sharedParser];
     id code = [parser parse:message];
+    
     id result = [parser eval:code];
     
     
