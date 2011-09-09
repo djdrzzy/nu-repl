@@ -26,11 +26,24 @@
                     receivedMessage:(NSString*)message {
     
     id parser = [Nu sharedParser];
-    id code = [parser parse:message];
     
-    id result = [parser eval:code];
+    id code = nil;
+    id result = nil;
     
-    
+    @try {
+        code = [parser parse:message];
+    }
+    @catch (NSException *exception) {
+        return [NSString stringWithFormat:@"%@", exception];
+    }
+
+    @try {
+        result = [parser eval:code];
+    }
+    @catch (NSException *exception) {
+        return [NSString stringWithFormat:@"%@", exception];
+    }
+            
     return [NSString stringWithFormat:@"%@", result];
 }
 
