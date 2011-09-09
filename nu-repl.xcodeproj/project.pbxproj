@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1510452B1419A0F2001D8E43 /* Nu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510452A1419A0F2001D8E43 /* Nu.m */; };
+		151045331419A6AF001D8E43 /* ffi.c in Sources */ = {isa = PBXBuildFile; fileRef = 1510452E1419A6AF001D8E43 /* ffi.c */; };
+		151045341419A6AF001D8E43 /* ffi.S in Sources */ = {isa = PBXBuildFile; fileRef = 151045301419A6AF001D8E43 /* ffi.S */; };
+		151045351419A6AF001D8E43 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 151045311419A6AF001D8E43 /* LICENSE */; };
+		151045361419A6AF001D8E43 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 151045321419A6AF001D8E43 /* README.markdown */; };
+		1510453D1419A83E001D8E43 /* librmi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151045211419A05F001D8E43 /* librmi.a */; };
+		155A19A71419AA5C00772521 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155A19A61419AA5C00772521 /* CFNetwork.framework */; };
 		15F5F0BF1411B84C00D0C295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0BE1411B84C00D0C295 /* UIKit.framework */; };
 		15F5F0C11411B84C00D0C295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C01411B84C00D0C295 /* Foundation.framework */; };
 		15F5F0C31411B84C00D0C295 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */; };
@@ -19,30 +26,39 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		15F5F0ED1411B96400D0C295 /* PBXContainerItemProxy */ = {
+		1510451E1419A05F001D8E43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 15F5F0E41411B96400D0C295 /* rmi.xcodeproj */;
+			containerPortal = 151045151419A05F001D8E43 /* rmi.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
 			remoteInfo = "rmi-test";
 		};
-		15F5F0EF1411B96400D0C295 /* PBXContainerItemProxy */ = {
+		151045201419A05F001D8E43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 15F5F0E41411B96400D0C295 /* rmi.xcodeproj */;
+			containerPortal = 151045151419A05F001D8E43 /* rmi.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 15B964E213898CC00026141E;
 			remoteInfo = rmi;
 		};
-		15F5F0F91411B9B000D0C295 /* PBXContainerItemProxy */ = {
+		1510453B1419A834001D8E43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 15F5F0F11411B9B000D0C295 /* NuApp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
-			remoteInfo = NuApp;
+			containerPortal = 151045151419A05F001D8E43 /* rmi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 15B964E113898CC00026141E;
+			remoteInfo = rmi;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		151045151419A05F001D8E43 /* rmi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = rmi.xcodeproj; path = lib/rmi/rmi.xcodeproj; sourceTree = SOURCE_ROOT; };
+		151045291419A0F2001D8E43 /* Nu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Nu.h; path = lib/nu/objc/Nu.h; sourceTree = SOURCE_ROOT; };
+		1510452A1419A0F2001D8E43 /* Nu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Nu.m; path = lib/nu/objc/Nu.m; sourceTree = SOURCE_ROOT; };
+		1510452E1419A6AF001D8E43 /* ffi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi.c; sourceTree = "<group>"; };
+		1510452F1419A6AF001D8E43 /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		151045301419A6AF001D8E43 /* ffi.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = ffi.S; sourceTree = "<group>"; };
+		151045311419A6AF001D8E43 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		151045321419A6AF001D8E43 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		155A19A61419AA5C00772521 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		15F5F0BA1411B84C00D0C295 /* nu-repl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nu-repl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F5F0BE1411B84C00D0C295 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15F5F0C01411B84C00D0C295 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,8 +73,6 @@
 		15F5F0D31411B84C00D0C295 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		15F5F0D41411B84C00D0C295 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		15F5F0D71411B84C00D0C295 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
-		15F5F0E41411B96400D0C295 /* rmi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = rmi.xcodeproj; path = lib/rmi/rmi.xcodeproj; sourceTree = "<group>"; };
-		15F5F0F11411B9B000D0C295 /* NuApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NuApp.xcodeproj; path = lib/nu/iOS/NuApp/NuApp.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155A19A71419AA5C00772521 /* CFNetwork.framework in Frameworks */,
+				1510453D1419A83E001D8E43 /* librmi.a in Frameworks */,
 				15F5F0BF1411B84C00D0C295 /* UIKit.framework in Frameworks */,
 				15F5F0C11411B84C00D0C295 /* Foundation.framework in Frameworks */,
 				15F5F0C31411B84C00D0C295 /* CoreGraphics.framework in Frameworks */,
@@ -75,11 +91,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		151045141419A03B001D8E43 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1510452C1419A0F5001D8E43 /* nu */,
+				151045151419A05F001D8E43 /* rmi.xcodeproj */,
+			);
+			name = lib;
+			path = "nu-repl";
+			sourceTree = "<group>";
+		};
+		151045161419A05F001D8E43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1510451F1419A05F001D8E43 /* rmi.app */,
+				151045211419A05F001D8E43 /* librmi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1510452C1419A0F5001D8E43 /* nu */ = {
+			isa = PBXGroup;
+			children = (
+				1510452D1419A6AF001D8E43 /* libffi */,
+				151045291419A0F2001D8E43 /* Nu.h */,
+				1510452A1419A0F2001D8E43 /* Nu.m */,
+			);
+			name = nu;
+			sourceTree = "<group>";
+		};
+		1510452D1419A6AF001D8E43 /* libffi */ = {
+			isa = PBXGroup;
+			children = (
+				1510452E1419A6AF001D8E43 /* ffi.c */,
+				1510452F1419A6AF001D8E43 /* ffi.h */,
+				151045301419A6AF001D8E43 /* ffi.S */,
+				151045311419A6AF001D8E43 /* LICENSE */,
+				151045321419A6AF001D8E43 /* README.markdown */,
+			);
+			name = libffi;
+			path = lib/nu/libffi;
+			sourceTree = SOURCE_ROOT;
+		};
 		15F5F0AF1411B84C00D0C295 = {
 			isa = PBXGroup;
 			children = (
+				155A19A61419AA5C00772521 /* CFNetwork.framework */,
 				15F5F0C41411B84C00D0C295 /* nu-repl */,
-				15F5F0E21411B94400D0C295 /* lib */,
+				151045141419A03B001D8E43 /* lib */,
 				15F5F0BD1411B84C00D0C295 /* Frameworks */,
 				15F5F0BB1411B84C00D0C295 /* Products */,
 			);
@@ -128,32 +187,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		15F5F0E21411B94400D0C295 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				15F5F0F11411B9B000D0C295 /* NuApp.xcodeproj */,
-				15F5F0E41411B96400D0C295 /* rmi.xcodeproj */,
-			);
-			name = lib;
-			sourceTree = "<group>";
-		};
-		15F5F0E51411B96400D0C295 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				15F5F0EE1411B96400D0C295 /* rmi.app */,
-				15F5F0F01411B96400D0C295 /* librmi.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		15F5F0F21411B9B000D0C295 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				15F5F0FA1411B9B000D0C295 /* NuApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +201,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1510453C1419A834001D8E43 /* PBXTargetDependency */,
 			);
 			name = "nu-repl";
 			productName = "nu-repl";
@@ -194,12 +228,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 15F5F0F21411B9B000D0C295 /* Products */;
-					ProjectRef = 15F5F0F11411B9B000D0C295 /* NuApp.xcodeproj */;
-				},
-				{
-					ProductGroup = 15F5F0E51411B96400D0C295 /* Products */;
-					ProjectRef = 15F5F0E41411B96400D0C295 /* rmi.xcodeproj */;
+					ProductGroup = 151045161419A05F001D8E43 /* Products */;
+					ProjectRef = 151045151419A05F001D8E43 /* rmi.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -210,25 +240,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		15F5F0EE1411B96400D0C295 /* rmi.app */ = {
+		1510451F1419A05F001D8E43 /* rmi.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = rmi.app;
-			remoteRef = 15F5F0ED1411B96400D0C295 /* PBXContainerItemProxy */;
+			remoteRef = 1510451E1419A05F001D8E43 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		15F5F0F01411B96400D0C295 /* librmi.a */ = {
+		151045211419A05F001D8E43 /* librmi.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = librmi.a;
-			remoteRef = 15F5F0EF1411B96400D0C295 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		15F5F0FA1411B9B000D0C295 /* NuApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = NuApp.app;
-			remoteRef = 15F5F0F91411B9B000D0C295 /* PBXContainerItemProxy */;
+			remoteRef = 151045201419A05F001D8E43 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -241,6 +264,8 @@
 				15F5F0C91411B84C00D0C295 /* InfoPlist.strings in Resources */,
 				15F5F0D21411B84C00D0C295 /* MainWindow.xib in Resources */,
 				15F5F0D81411B84C00D0C295 /* RootViewController.xib in Resources */,
+				151045351419A6AF001D8E43 /* LICENSE in Resources */,
+				151045361419A6AF001D8E43 /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,10 +279,21 @@
 				15F5F0CB1411B84C00D0C295 /* main.m in Sources */,
 				15F5F0CF1411B84C00D0C295 /* nu_replAppDelegate.m in Sources */,
 				15F5F0D51411B84C00D0C295 /* RootViewController.m in Sources */,
+				1510452B1419A0F2001D8E43 /* Nu.m in Sources */,
+				151045331419A6AF001D8E43 /* ffi.c in Sources */,
+				151045341419A6AF001D8E43 /* ffi.S in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1510453C1419A834001D8E43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = rmi;
+			targetProxy = 1510453B1419A834001D8E43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		15F5F0C71411B84C00D0C295 /* InfoPlist.strings */ = {
@@ -290,10 +326,11 @@
 		15F5F0D91411B84C00D0C295 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -302,30 +339,34 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "./lib/**";
 			};
 			name = Debug;
 		};
 		15F5F0DA1411B84C00D0C295 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "./lib/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
