@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITableViewController
+@interface RootViewController : UIViewController {
+    UILabel *ipAddressLabel;
+    UILabel *testOutputLabel;
+}
 
+@property (nonatomic, retain) IBOutlet UILabel *ipAddressLabel;
+@property (nonatomic, retain) IBOutlet UILabel *testOutputLabel;
+
+- (IBAction)updateButtonTouched:(id)sender;
 @end

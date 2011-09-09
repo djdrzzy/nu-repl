@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RootViewController.h"
+
 @interface nu_replAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
+@property (nonatomic, assign) IBOutlet RootViewController *rootViewController;
 
 @end

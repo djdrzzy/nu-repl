@@ -19,6 +19,7 @@
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
+@synthesize rootViewController;
 
 @synthesize rmi;
 
@@ -36,14 +37,14 @@
     @catch (NSException *exception) {
         return [NSString stringWithFormat:@"%@", exception];
     }
-
+    
     @try {
         result = [parser eval:code];
     }
     @catch (NSException *exception) {
         return [NSString stringWithFormat:@"%@", exception];
     }
-            
+    
     return [NSString stringWithFormat:@"%@", result];
 }
 
@@ -59,6 +60,12 @@
     
     [self.rmi startOnSocket:40000];
     
+    self.rootViewController.ipAddressLabel.text = [NSString stringWithFormat:@"%@:%@", 
+                                                   [self.rmi getIPAddress], 
+                                                   [self.rmi port]]; 
+    
+    [[Nu sharedParser] eval:
+     [[Nu sharedParser] parse:@"(function test-output () \"You should update me!\")"]];
     
     return YES;
 }
