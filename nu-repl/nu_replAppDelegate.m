@@ -50,6 +50,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [[Nu sharedParser] eval:
+     [[Nu sharedParser] parse:@"(function test-output () \"You should update me!\")"]];
+    
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
     self.window.rootViewController = self.navigationController;
@@ -64,8 +68,7 @@
                                                    [self.rmi getIPAddress], 
                                                    [self.rmi port]]; 
     
-    [[Nu sharedParser] eval:
-     [[Nu sharedParser] parse:@"(function test-output () \"You should update me!\")"]];
+
     
     return YES;
 }
