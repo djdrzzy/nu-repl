@@ -37,7 +37,7 @@
     @catch (NSException *exception) {
         return [NSString stringWithFormat:@"%@", exception];
     }
-    
+
     @try {
         result = [parser eval:code];
     }
@@ -59,7 +59,9 @@
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
-    self.rmi = [[[RemoteMessageInterface alloc] init] autorelease];
+    self.rmi = [[[RemoteMessageInterface alloc] initWithWelcomeMessage:@""
+                                                             andPrompt:@""]
+                autorelease];
     self.rmi.delegate = self;
     
     [self.rmi startOnSocket:40000];
