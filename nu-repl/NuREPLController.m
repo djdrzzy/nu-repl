@@ -3,7 +3,7 @@
 //  nu-repl
 //
 //  Created by Daniel Drzimotta on 11-09-14.
-//  Copyright 2011 Soma Creates. All rights reserved.
+//  Copyright 2011 Daniel Drzimotta. All rights reserved.
 //
 
 #import "NuREPLController.h"
@@ -11,11 +11,11 @@
 #import "RemoteMessageInterface.h"
 #import "Nu.h"
 
-static NuREPLController* _sharedNuREPLController = nil;
-
-@interface NuREPLController () <RemoteMessageInterfaceDelegate>
+@interface NuREPLController : NSObject <RemoteMessageInterfaceDelegate>
 @property (nonatomic, readwrite, retain) RemoteMessageInterface *rmi;
 @end
+
+static NuREPLController* _sharedNuREPLController = nil;
 
 @implementation NuREPLController
 @synthesize rmi;

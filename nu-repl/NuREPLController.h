@@ -3,7 +3,7 @@
 //  nu-repl
 //
 //  Created by Daniel Drzimotta on 11-09-14.
-//  Copyright 2011 Soma Creates. All rights reserved.
+//  Copyright 2011 Daniel Drzimotta. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,6 +11,4 @@
 NSString* replIPAddress(void);
 NSString* replPort(void);
 id replEval(NSString *message);
-void setup(void);
-@interface NuREPLController : NSObject
-@end
+void replSetup(void);

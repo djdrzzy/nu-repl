@@ -3,7 +3,7 @@
 //  nu-repl
 //
 //  Created by Daniel Drzimotta on 11-09-02.
-//  Copyright 2011 Soma Creates. All rights reserved.
+//  Copyright 2011 Daniel Drzimotta. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
