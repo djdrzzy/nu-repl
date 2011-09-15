@@ -117,6 +117,6 @@ id replEval(NSString *message) {
     return [[NuREPLController sharedNuREPLController] readAndEvaluate:message];
 }
 
-void setup(void) {
+void replSetup(void) {
     [NuREPLController sharedNuREPLController];
 }
