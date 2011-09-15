@@ -11,6 +11,6 @@
 NSString* replIPAddress(void);
 NSString* replPort(void);
 id replEval(NSString *message);
-
+void setup(void);
 @interface NuREPLController : NSObject
 @end

@@ -45,6 +45,7 @@ static NuREPLController* _sharedNuREPLController = nil;
 	return nil;
 }
 
+
 -(id)init {
 	self = [super init];
 	if (self != nil) {
@@ -114,4 +115,8 @@ NSString* replPort(void) {
 
 id replEval(NSString *message) {
     return [[NuREPLController sharedNuREPLController] readAndEvaluate:message];
+}
+
+void setup(void) {
+    [NuREPLController sharedNuREPLController];
 }
