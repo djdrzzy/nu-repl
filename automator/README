@@ -9,3 +9,6 @@ for the address of the device on the same network and then sends the text over o
 port 40005.
 
 It's probably handy to assign a keyboard shortcut to it.
+
+You'll need growl installed on your system as the automator action has a use for
+that.
