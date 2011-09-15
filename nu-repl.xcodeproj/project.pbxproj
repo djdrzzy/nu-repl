@@ -15,6 +15,17 @@
 		1510453D1419A83E001D8E43 /* librmi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151045211419A05F001D8E43 /* librmi.a */; };
 		153923F31421C45500C8789F /* NuREPLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; };
 		155A19A71419AA5C00772521 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155A19A61419AA5C00772521 /* CFNetwork.framework */; };
+		159455C61421D3E0009D1DC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C01411B84C00D0C295 /* Foundation.framework */; };
+		159455CC1421D3E0009D1DC9 /* nurepl.m in Sources */ = {isa = PBXBuildFile; fileRef = 159455CB1421D3E0009D1DC9 /* nurepl.m */; };
+		159455D21421D42A009D1DC9 /* NuREPLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; };
+		159455D31421D42A009D1DC9 /* ffi.c in Sources */ = {isa = PBXBuildFile; fileRef = 1510452E1419A6AF001D8E43 /* ffi.c */; };
+		159455D41421D42A009D1DC9 /* ffi.S in Sources */ = {isa = PBXBuildFile; fileRef = 151045301419A6AF001D8E43 /* ffi.S */; };
+		159455D51421D42A009D1DC9 /* Nu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510452A1419A0F2001D8E43 /* Nu.m */; };
+		159455D61421D430009D1DC9 /* librmi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151045211419A05F001D8E43 /* librmi.a */; };
+		159455D71421D43A009D1DC9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155A19A61419AA5C00772521 /* CFNetwork.framework */; };
+		159455D81421D43A009D1DC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0BE1411B84C00D0C295 /* UIKit.framework */; };
+		159455D91421D43A009D1DC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */; };
+		159455DA1421D457009D1DC9 /* NuREPLController.m in Headers */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; };
 		15F5F0BF1411B84C00D0C295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0BE1411B84C00D0C295 /* UIKit.framework */; };
 		15F5F0C11411B84C00D0C295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C01411B84C00D0C295 /* Foundation.framework */; };
 		15F5F0C31411B84C00D0C295 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */; };
@@ -48,6 +59,13 @@
 			remoteGlobalIDString = 15B964E113898CC00026141E;
 			remoteInfo = rmi;
 		};
+		159455D01421D408009D1DC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151045151419A05F001D8E43 /* rmi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 15B964E113898CC00026141E;
+			remoteInfo = rmi;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +80,10 @@
 		153923F11421C45500C8789F /* NuREPLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuREPLController.h; sourceTree = "<group>"; };
 		153923F21421C45500C8789F /* NuREPLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuREPLController.m; sourceTree = "<group>"; };
 		155A19A61419AA5C00772521 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		159455C51421D3E0009D1DC9 /* libnurepl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnurepl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		159455C91421D3E0009D1DC9 /* nurepl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nurepl-Prefix.pch"; sourceTree = "<group>"; };
+		159455CA1421D3E0009D1DC9 /* nurepl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nurepl.h; sourceTree = "<group>"; };
+		159455CB1421D3E0009D1DC9 /* nurepl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nurepl.m; sourceTree = "<group>"; };
 		15F5F0BA1411B84C00D0C295 /* nu-repl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nu-repl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F5F0BE1411B84C00D0C295 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15F5F0C01411B84C00D0C295 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +101,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		159455C21421D3E0009D1DC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				159455D61421D430009D1DC9 /* librmi.a in Frameworks */,
+				159455C61421D3E0009D1DC9 /* Foundation.framework in Frameworks */,
+				159455D71421D43A009D1DC9 /* CFNetwork.framework in Frameworks */,
+				159455D81421D43A009D1DC9 /* UIKit.framework in Frameworks */,
+				159455D91421D43A009D1DC9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15F5F0B71411B84C00D0C295 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,11 +170,30 @@
 			path = lib/nu/libffi;
 			sourceTree = SOURCE_ROOT;
 		};
+		159455C71421D3E0009D1DC9 /* nurepl */ = {
+			isa = PBXGroup;
+			children = (
+				159455CA1421D3E0009D1DC9 /* nurepl.h */,
+				159455CB1421D3E0009D1DC9 /* nurepl.m */,
+				159455C81421D3E0009D1DC9 /* Supporting Files */,
+			);
+			path = nurepl;
+			sourceTree = "<group>";
+		};
+		159455C81421D3E0009D1DC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				159455C91421D3E0009D1DC9 /* nurepl-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		15F5F0AF1411B84C00D0C295 = {
 			isa = PBXGroup;
 			children = (
 				15F5F0C41411B84C00D0C295 /* nu-repl */,
 				151045141419A03B001D8E43 /* lib */,
+				159455C71421D3E0009D1DC9 /* nurepl */,
 				15F5F0BD1411B84C00D0C295 /* Frameworks */,
 				15F5F0BB1411B84C00D0C295 /* Products */,
 			);
@@ -150,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				15F5F0BA1411B84C00D0C295 /* nu-repl.app */,
+				159455C51421D3E0009D1DC9 /* libnurepl.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,7 +248,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		159455C31421D3E0009D1DC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				159455DA1421D457009D1DC9 /* NuREPLController.m in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		159455C41421D3E0009D1DC9 /* nurepl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 159455CD1421D3E0009D1DC9 /* Build configuration list for PBXNativeTarget "nurepl" */;
+			buildPhases = (
+				159455C11421D3E0009D1DC9 /* Sources */,
+				159455C21421D3E0009D1DC9 /* Frameworks */,
+				159455C31421D3E0009D1DC9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				159455D11421D408009D1DC9 /* PBXTargetDependency */,
+			);
+			name = nurepl;
+			productName = nurepl;
+			productReference = 159455C51421D3E0009D1DC9 /* libnurepl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		15F5F0B91411B84C00D0C295 /* nu-repl */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15F5F0DB1411B84C00D0C295 /* Build configuration list for PBXNativeTarget "nu-repl" */;
@@ -240,6 +323,7 @@
 			projectRoot = "";
 			targets = (
 				15F5F0B91411B84C00D0C295 /* nu-repl */,
+				159455C41421D3E0009D1DC9 /* nurepl */,
 			);
 		};
 /* End PBXProject section */
@@ -277,6 +361,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		159455C11421D3E0009D1DC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				159455D21421D42A009D1DC9 /* NuREPLController.m in Sources */,
+				159455D31421D42A009D1DC9 /* ffi.c in Sources */,
+				159455D41421D42A009D1DC9 /* ffi.S in Sources */,
+				159455D51421D42A009D1DC9 /* Nu.m in Sources */,
+				159455CC1421D3E0009D1DC9 /* nurepl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15F5F0B61411B84C00D0C295 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +394,11 @@
 			isa = PBXTargetDependency;
 			name = rmi;
 			targetProxy = 1510453B1419A834001D8E43 /* PBXContainerItemProxy */;
+		};
+		159455D11421D408009D1DC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = rmi;
+			targetProxy = 159455D01421D408009D1DC9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -329,6 +430,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		159455CE1421D3E0009D1DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/nurepl.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nurepl/nurepl-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		159455CF1421D3E0009D1DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/nurepl.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nurepl/nurepl-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		15F5F0D91411B84C00D0C295 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +533,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		159455CD1421D3E0009D1DC9 /* Build configuration list for PBXNativeTarget "nurepl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				159455CE1421D3E0009D1DC9 /* Debug */,
+				159455CF1421D3E0009D1DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		15F5F0B41411B84C00D0C295 /* Build configuration list for PBXProject "nu-repl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
