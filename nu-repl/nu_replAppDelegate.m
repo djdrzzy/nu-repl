@@ -64,7 +64,7 @@
                 autorelease];
     self.rmi.delegate = self;
     
-    [self.rmi startOnSocket:40000];
+    [self.rmi startOnSocket:40005];
     
     self.rootViewController.ipAddressLabel.text = [NSString stringWithFormat:@"%@:%@", 
                                                    [self.rmi getIPAddress], 
