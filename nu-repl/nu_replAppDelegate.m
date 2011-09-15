@@ -8,12 +8,7 @@
 
 #import "nu_replAppDelegate.h"
 
-#import "RemoteMessageInterface.h"
-#import "Nu.h"
-
-@interface nu_replAppDelegate () <RemoteMessageInterfaceDelegate>
-@property (nonatomic, readwrite, retain) RemoteMessageInterface *rmi;
-@end
+#import "NuREPLController.h"
 
 @implementation nu_replAppDelegate
 
@@ -21,57 +16,16 @@
 @synthesize navigationController = _navigationController;
 @synthesize rootViewController;
 
-@synthesize rmi;
-
--(NSString*) remoteMessageInterface:(RemoteMessageInterface*)interface
-                    receivedMessage:(NSString*)message {
-    
-    id parser = [Nu sharedParser];
-    
-    id code = nil;
-    id result = nil;
-    
-    @try {
-        code = [parser parse:message];
-    }
-    @catch (NSException *exception) {
-        return [NSString stringWithFormat:@"%@", exception];
-    }
-
-    @try {
-        result = [parser eval:code];
-    }
-    @catch (NSException *exception) {
-        return [NSString stringWithFormat:@"%@", exception];
-    }
-    
-    return [NSString stringWithFormat:@"%@", result];
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    [[Nu sharedParser] eval:
-     [[Nu sharedParser] parse:@"(function test-output () \"You should update me!\")"]];
-    
-    // Override point for customization after application launch.
-    // Add the navigation controller's view to the window and display.
+    replEval(@"(function test-output () \"You should update me!\")");
+
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
-    self.rmi = [[[RemoteMessageInterface alloc] initWithWelcomeMessage:@""
-                                                             andPrompt:@""]
-                autorelease];
-    self.rmi.delegate = self;
-    
-    [self.rmi startOnSocket:40005];
-    
     self.rootViewController.ipAddressLabel.text = [NSString stringWithFormat:@"%@:%@", 
-                                                   [self.rmi getIPAddress], 
-                                                   [self.rmi port]]; 
-    
-
-    
+                                                   replIPAddress(), 
+                                                   replPort()]; 
     return YES;
 }
 
@@ -119,7 +73,6 @@
     [_window release];
     [_navigationController release];
     
-    self.rmi = nil;
     [super dealloc];
 }
 

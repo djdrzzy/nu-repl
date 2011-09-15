@@ -8,8 +8,7 @@
 
 #import "RootViewController.h"
 
-#import "RemoteMessageInterface.h"
-#import "Nu.h"
+#import "NuREPLController.h"
 
 @implementation RootViewController
 @synthesize ipAddressLabel;
@@ -79,8 +78,7 @@
 - (IBAction)updateButtonTouched:(id)sender {
     NSString *stringToUse = 
     [NSString stringWithFormat:@"%@",
-     [[Nu sharedParser] eval:
-      [[Nu sharedParser] parse:@"(test-output)"]]];
+     replEval(@"(test-output)")];
     
     self.testOutputLabel.text = stringToUse;
 }
