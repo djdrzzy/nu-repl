@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     replEval(@"(function test-output () \"You should update me!\")");
-
+    
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
@@ -50,6 +50,8 @@
     /*
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
+    
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

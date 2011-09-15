@@ -45,15 +45,15 @@ static NuREPLController* _sharedNuREPLController = nil;
 	return nil;
 }
 
++(void) load {
+    id pool = [[NSAutoreleasePool alloc] init];
+    replSetup();
+    [pool drain];
+}
 
 -(id)init {
 	self = [super init];
-	if (self != nil) {
-		[[NSNotificationCenter defaultCenter] 
-         addObserver:self 
-         selector:@selector(applicationDidLaunchFromNotification:) 
-         name:UIApplicationDidFinishLaunchingNotification object:nil];
-        
+	if (self != nil) {        
         self.rmi = [[[RemoteMessageInterface alloc] initWithWelcomeMessage:@""
                                                                  andPrompt:@""]
                     autorelease];
