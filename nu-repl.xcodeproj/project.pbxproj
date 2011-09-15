@@ -139,7 +139,6 @@
 		15F5F0AF1411B84C00D0C295 = {
 			isa = PBXGroup;
 			children = (
-				155A19A61419AA5C00772521 /* CFNetwork.framework */,
 				15F5F0C41411B84C00D0C295 /* nu-repl */,
 				151045141419A03B001D8E43 /* lib */,
 				15F5F0BD1411B84C00D0C295 /* Frameworks */,
@@ -158,6 +157,7 @@
 		15F5F0BD1411B84C00D0C295 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				155A19A61419AA5C00772521 /* CFNetwork.framework */,
 				15F5F0BE1411B84C00D0C295 /* UIKit.framework */,
 				15F5F0C01411B84C00D0C295 /* Foundation.framework */,
 				15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */,
