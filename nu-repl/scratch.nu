@@ -12,3 +12,12 @@
 
 "wakka wakka wakka"
 
+
+# A very slow fibbonaci function... Don't try with values to high
+(function fib (n)
+    (if (or (eq n 0) (eq n 1))
+        1
+        (else
+            (+ (fib (- n 1)) (fib (- n 2))))))
+
+(fib 20)

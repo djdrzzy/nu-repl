@@ -43,7 +43,7 @@
 					<object class="IBUILabel" id="196265688">
 						<reference key="NSNextResponder" ref="243415988"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{5, 42}, {109, 21}}</string>
+						<string key="NSFrame">{{5, 42}, {137, 21}}</string>
 						<reference key="NSSuperview" ref="243415988"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="705652722"/>
@@ -53,7 +53,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Telnet into me at:</string>
+						<string key="IBUIText">Address and Port are:</string>
 						<object class="NSColor" key="IBUITextColor" id="621194777">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>

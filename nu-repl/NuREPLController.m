@@ -51,6 +51,8 @@ static NuREPLController* _sharedNuREPLController = nil;
         self.rmi = [[[RemoteMessageInterface alloc] initWithWelcomeMessage:@""
                                                                  andPrompt:@""]
                     autorelease];
+        self.rmi.squelchClientLogging = YES;
+        self.rmi.branding = @"Nu-REPL";
         self.rmi.delegate = self;
         
         [self.rmi startOnSocket:40005];
