@@ -18,3 +18,8 @@
 #(function test-output ()
 #    (set x (+ x 1))
 #    "hey hey hey" + x)
+
+
+
+## If you make that change and then restart your app after having modified your
+## source the changes will stick. Cool!

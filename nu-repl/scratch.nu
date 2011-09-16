@@ -1,5 +1,5 @@
-This is just a file to type stuff in and then send to the nu-repl in our
-keyboard activated automator action.
+# This is just a file to type stuff in and then send to the nu-repl in our
+# keyboard activated automator action.
 
 (+ 2 2)
 
