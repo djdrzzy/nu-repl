@@ -15,6 +15,7 @@
 		1510453D1419A83E001D8E43 /* librmi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151045211419A05F001D8E43 /* librmi.a */; };
 		1518E32C1422E9DA00EBA817 /* scratch.nu in Resources */ = {isa = PBXBuildFile; fileRef = 1518E32B1422E9DA00EBA817 /* scratch.nu */; };
 		1518E3301422EEFC00EBA817 /* main.nu in Resources */ = {isa = PBXBuildFile; fileRef = 1518E32F1422EEFC00EBA817 /* main.nu */; };
+		1518E37B1422FE3700EBA817 /* NuREPLController.h in Headers */ = {isa = PBXBuildFile; fileRef = 153923F11421C45500C8789F /* NuREPLController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		153923F31421C45500C8789F /* NuREPLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; };
 		155A19A71419AA5C00772521 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155A19A61419AA5C00772521 /* CFNetwork.framework */; };
 		159455C61421D3E0009D1DC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C01411B84C00D0C295 /* Foundation.framework */; };
@@ -27,7 +28,6 @@
 		159455D71421D43A009D1DC9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155A19A61419AA5C00772521 /* CFNetwork.framework */; };
 		159455D81421D43A009D1DC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0BE1411B84C00D0C295 /* UIKit.framework */; };
 		159455D91421D43A009D1DC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */; };
-		159455DA1421D457009D1DC9 /* NuREPLController.m in Headers */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		15F5F0BF1411B84C00D0C295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0BE1411B84C00D0C295 /* UIKit.framework */; };
 		15F5F0C11411B84C00D0C295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C01411B84C00D0C295 /* Foundation.framework */; };
 		15F5F0C31411B84C00D0C295 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */; };
@@ -259,7 +259,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				159455DA1421D457009D1DC9 /* NuREPLController.m in Headers */,
+				1518E37B1422FE3700EBA817 /* NuREPLController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +442,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/nurepl.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nurepl/nurepl-Prefix.pch";
@@ -457,7 +456,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/nurepl.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nurepl/nurepl-Prefix.pch";

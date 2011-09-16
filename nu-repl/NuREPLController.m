@@ -45,12 +45,6 @@ static NuREPLController* _sharedNuREPLController = nil;
 	return nil;
 }
 
-+(void) load {
-    id pool = [[NSAutoreleasePool alloc] init];
-    replSetup();
-    [pool drain];
-}
-
 -(id)init {
 	self = [super init];
 	if (self != nil) {        
