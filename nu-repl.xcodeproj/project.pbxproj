@@ -321,6 +321,7 @@
 		15F5F0B11411B84C00D0C295 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Soma Creates";
 			};
 			buildConfigurationList = 15F5F0B41411B84C00D0C295 /* Build configuration list for PBXProject "nu-repl" */;
