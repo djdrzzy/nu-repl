@@ -13,7 +13,7 @@
 "wakka wakka wakka"
 
 
-# A very slow fibbonaci function... Don't try with values to high
+# A very slow fibbonaci function... Don't try with values too high
 (function fib (n)
     (if (or (eq n 0) (eq n 1))
         1
