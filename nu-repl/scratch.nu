@@ -8,3 +8,7 @@
 (function test-output ()
     (set x (+ x 1))
     "hey hey hey" + x)
+
+
+"wakka wakka wakka"
+

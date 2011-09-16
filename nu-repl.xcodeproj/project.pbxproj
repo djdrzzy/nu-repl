@@ -80,8 +80,6 @@
 		151045321419A6AF001D8E43 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		1518E32B1422E9DA00EBA817 /* scratch.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scratch.nu; sourceTree = "<group>"; };
 		1518E32F1422EEFC00EBA817 /* main.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.nu; sourceTree = "<group>"; };
-		1518E38A142302DE00EBA817 /* Pass To Nu-repl.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Pass To Nu-repl.workflow"; sourceTree = "<group>"; };
-		1518E38B142302DE00EBA817 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		1518E38E1423032D00EBA817 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		153923F11421C45500C8789F /* NuREPLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuREPLController.h; sourceTree = "<group>"; };
 		153923F21421C45500C8789F /* NuREPLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuREPLController.m; sourceTree = "<group>"; };
@@ -176,16 +174,6 @@
 			path = lib/nu/libffi;
 			sourceTree = SOURCE_ROOT;
 		};
-		1518E389142302DE00EBA817 /* automator */ = {
-			isa = PBXGroup;
-			children = (
-				1518E38A142302DE00EBA817 /* Pass To Nu-repl.workflow */,
-				1518E38B142302DE00EBA817 /* README */,
-			);
-			name = automator;
-			path = "../repl-test/lib/nu-repl/automator";
-			sourceTree = "<group>";
-		};
 		159455C71421D3E0009D1DC9 /* nurepl */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +197,6 @@
 			children = (
 				1518E38E1423032D00EBA817 /* README.markdown */,
 				15F5F0C41411B84C00D0C295 /* nu-repl */,
-				1518E389142302DE00EBA817 /* automator */,
 				151045141419A03B001D8E43 /* lib */,
 				159455C71421D3E0009D1DC9 /* nurepl */,
 				15F5F0BD1411B84C00D0C295 /* Frameworks */,
