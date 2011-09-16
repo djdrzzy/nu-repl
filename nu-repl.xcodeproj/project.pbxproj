@@ -13,7 +13,6 @@
 		151045351419A6AF001D8E43 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 151045311419A6AF001D8E43 /* LICENSE */; };
 		151045361419A6AF001D8E43 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 151045321419A6AF001D8E43 /* README.markdown */; };
 		1510453D1419A83E001D8E43 /* librmi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151045211419A05F001D8E43 /* librmi.a */; };
-		1518E32C1422E9DA00EBA817 /* scratch.nu in Resources */ = {isa = PBXBuildFile; fileRef = 1518E32B1422E9DA00EBA817 /* scratch.nu */; };
 		1518E3301422EEFC00EBA817 /* main.nu in Resources */ = {isa = PBXBuildFile; fileRef = 1518E32F1422EEFC00EBA817 /* main.nu */; };
 		1518E37B1422FE3700EBA817 /* NuREPLController.h in Headers */ = {isa = PBXBuildFile; fileRef = 153923F11421C45500C8789F /* NuREPLController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		153923F31421C45500C8789F /* NuREPLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; };
@@ -81,6 +80,9 @@
 		151045321419A6AF001D8E43 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		1518E32B1422E9DA00EBA817 /* scratch.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scratch.nu; sourceTree = "<group>"; };
 		1518E32F1422EEFC00EBA817 /* main.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.nu; sourceTree = "<group>"; };
+		1518E38A142302DE00EBA817 /* Pass To Nu-repl.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Pass To Nu-repl.workflow"; sourceTree = "<group>"; };
+		1518E38B142302DE00EBA817 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		1518E38E1423032D00EBA817 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		153923F11421C45500C8789F /* NuREPLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuREPLController.h; sourceTree = "<group>"; };
 		153923F21421C45500C8789F /* NuREPLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuREPLController.m; sourceTree = "<group>"; };
 		155A19A61419AA5C00772521 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -174,6 +176,16 @@
 			path = lib/nu/libffi;
 			sourceTree = SOURCE_ROOT;
 		};
+		1518E389142302DE00EBA817 /* automator */ = {
+			isa = PBXGroup;
+			children = (
+				1518E38A142302DE00EBA817 /* Pass To Nu-repl.workflow */,
+				1518E38B142302DE00EBA817 /* README */,
+			);
+			name = automator;
+			path = "../repl-test/lib/nu-repl/automator";
+			sourceTree = "<group>";
+		};
 		159455C71421D3E0009D1DC9 /* nurepl */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,7 +207,9 @@
 		15F5F0AF1411B84C00D0C295 = {
 			isa = PBXGroup;
 			children = (
+				1518E38E1423032D00EBA817 /* README.markdown */,
 				15F5F0C41411B84C00D0C295 /* nu-repl */,
+				1518E389142302DE00EBA817 /* automator */,
 				151045141419A03B001D8E43 /* lib */,
 				159455C71421D3E0009D1DC9 /* nurepl */,
 				15F5F0BD1411B84C00D0C295 /* Frameworks */,
@@ -361,7 +375,6 @@
 				15F5F0D81411B84C00D0C295 /* RootViewController.xib in Resources */,
 				151045351419A6AF001D8E43 /* LICENSE in Resources */,
 				151045361419A6AF001D8E43 /* README.markdown in Resources */,
-				1518E32C1422E9DA00EBA817 /* scratch.nu in Resources */,
 				1518E3301422EEFC00EBA817 /* main.nu in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
