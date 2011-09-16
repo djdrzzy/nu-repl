@@ -81,6 +81,8 @@
 		1518E32B1422E9DA00EBA817 /* scratch.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scratch.nu; sourceTree = "<group>"; };
 		1518E32F1422EEFC00EBA817 /* main.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.nu; sourceTree = "<group>"; };
 		1518E38E1423032D00EBA817 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		152CBDFC14230D5000A7972F /* Pass To Nu-repl.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Pass To Nu-repl.workflow"; sourceTree = "<group>"; };
+		152CBDFD14230D5000A7972F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		153923F11421C45500C8789F /* NuREPLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuREPLController.h; sourceTree = "<group>"; };
 		153923F21421C45500C8789F /* NuREPLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuREPLController.m; sourceTree = "<group>"; };
 		155A19A61419AA5C00772521 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -174,6 +176,15 @@
 			path = lib/nu/libffi;
 			sourceTree = SOURCE_ROOT;
 		};
+		152CBDFB14230D5000A7972F /* automator */ = {
+			isa = PBXGroup;
+			children = (
+				152CBDFC14230D5000A7972F /* Pass To Nu-repl.workflow */,
+				152CBDFD14230D5000A7972F /* README */,
+			);
+			path = automator;
+			sourceTree = "<group>";
+		};
 		159455C71421D3E0009D1DC9 /* nurepl */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +208,7 @@
 			children = (
 				1518E38E1423032D00EBA817 /* README.markdown */,
 				15F5F0C41411B84C00D0C295 /* nu-repl */,
+				152CBDFB14230D5000A7972F /* automator */,
 				151045141419A03B001D8E43 /* lib */,
 				159455C71421D3E0009D1DC9 /* nurepl */,
 				15F5F0BD1411B84C00D0C295 /* Frameworks */,
