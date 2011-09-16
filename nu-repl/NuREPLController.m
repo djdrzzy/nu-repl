@@ -75,14 +75,21 @@ static NuREPLController* _sharedNuREPLController = nil;
         code = [parser parse:message];
     }
     @catch (NSException *exception) {
-        return [NSString stringWithFormat:@"%@", exception];
+        [parser reset];
+        return [NSString stringWithFormat:@"Exception: %@", exception];
     }
     
     @try {
         result = [parser eval:code];
     }
     @catch (NSException *exception) {
-        return [NSString stringWithFormat:@"%@", exception];
+        [parser reset];
+        return [NSString stringWithFormat:@"Exception: %@", exception];
+    }
+    
+    if ([parser incomplete]) {
+        result = @"Incomplete form. Resetting.";
+        [parser reset];
     }
     
     return [NSString stringWithFormat:@"%@", result];
@@ -115,6 +122,15 @@ NSString* replPort(void) {
 
 id replEval(NSString *message) {
     return [[NuREPLController sharedNuREPLController] readAndEvaluate:message];
+}
+
+id replEvalFile(NSString *fileInMainBundleName) {
+    id path = [[NSBundle mainBundle] pathForResource:fileInMainBundleName 
+                                                ofType:nil];
+    NSString *fileContents = [NSString stringWithContentsOfFile:path 
+                                                       encoding:NSUTF8StringEncoding 
+                                                          error:NULL];
+    return replEval(fileContents);
 }
 
 void replSetup(void) {

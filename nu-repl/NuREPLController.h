@@ -11,4 +11,5 @@
 NSString* replIPAddress(void);
 NSString* replPort(void);
 id replEval(NSString *message);
+id replEvalFile(NSString *fileInMainBundleName);
 void replSetup(void);

@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    replEval(@"(function test-output () \"You should update me!\")");
+    replEvalFile(@"main.nu");
     
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];

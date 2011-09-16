@@ -13,6 +13,8 @@
 		151045351419A6AF001D8E43 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 151045311419A6AF001D8E43 /* LICENSE */; };
 		151045361419A6AF001D8E43 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 151045321419A6AF001D8E43 /* README.markdown */; };
 		1510453D1419A83E001D8E43 /* librmi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151045211419A05F001D8E43 /* librmi.a */; };
+		1518E32C1422E9DA00EBA817 /* scratch.nu in Resources */ = {isa = PBXBuildFile; fileRef = 1518E32B1422E9DA00EBA817 /* scratch.nu */; };
+		1518E3301422EEFC00EBA817 /* main.nu in Resources */ = {isa = PBXBuildFile; fileRef = 1518E32F1422EEFC00EBA817 /* main.nu */; };
 		153923F31421C45500C8789F /* NuREPLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; };
 		155A19A71419AA5C00772521 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155A19A61419AA5C00772521 /* CFNetwork.framework */; };
 		159455C61421D3E0009D1DC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C01411B84C00D0C295 /* Foundation.framework */; };
@@ -25,7 +27,7 @@
 		159455D71421D43A009D1DC9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155A19A61419AA5C00772521 /* CFNetwork.framework */; };
 		159455D81421D43A009D1DC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0BE1411B84C00D0C295 /* UIKit.framework */; };
 		159455D91421D43A009D1DC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */; };
-		159455DA1421D457009D1DC9 /* NuREPLController.m in Headers */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; };
+		159455DA1421D457009D1DC9 /* NuREPLController.m in Headers */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		15F5F0BF1411B84C00D0C295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0BE1411B84C00D0C295 /* UIKit.framework */; };
 		15F5F0C11411B84C00D0C295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C01411B84C00D0C295 /* Foundation.framework */; };
 		15F5F0C31411B84C00D0C295 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */; };
@@ -77,6 +79,8 @@
 		151045301419A6AF001D8E43 /* ffi.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = ffi.S; sourceTree = "<group>"; };
 		151045311419A6AF001D8E43 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		151045321419A6AF001D8E43 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		1518E32B1422E9DA00EBA817 /* scratch.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scratch.nu; sourceTree = "<group>"; };
+		1518E32F1422EEFC00EBA817 /* main.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.nu; sourceTree = "<group>"; };
 		153923F11421C45500C8789F /* NuREPLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuREPLController.h; sourceTree = "<group>"; };
 		153923F21421C45500C8789F /* NuREPLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuREPLController.m; sourceTree = "<group>"; };
 		155A19A61419AA5C00772521 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -231,6 +235,8 @@
 				15F5F0C51411B84C00D0C295 /* Supporting Files */,
 				153923F11421C45500C8789F /* NuREPLController.h */,
 				153923F21421C45500C8789F /* NuREPLController.m */,
+				1518E32B1422E9DA00EBA817 /* scratch.nu */,
+				1518E32F1422EEFC00EBA817 /* main.nu */,
 			);
 			path = "nu-repl";
 			sourceTree = "<group>";
@@ -355,6 +361,8 @@
 				15F5F0D81411B84C00D0C295 /* RootViewController.xib in Resources */,
 				151045351419A6AF001D8E43 /* LICENSE in Resources */,
 				151045361419A6AF001D8E43 /* README.markdown in Resources */,
+				1518E32C1422E9DA00EBA817 /* scratch.nu in Resources */,
+				1518E3301422EEFC00EBA817 /* main.nu in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +548,7 @@
 				159455CF1421D3E0009D1DC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15F5F0B41411B84C00D0C295 /* Build configuration list for PBXProject "nu-repl" */ = {
 			isa = XCConfigurationList;
