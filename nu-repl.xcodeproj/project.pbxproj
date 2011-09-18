@@ -14,11 +14,8 @@
 		151045361419A6AF001D8E43 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 151045321419A6AF001D8E43 /* README.markdown */; };
 		1510453D1419A83E001D8E43 /* librmi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151045211419A05F001D8E43 /* librmi.a */; };
 		1518E3301422EEFC00EBA817 /* main.nu in Resources */ = {isa = PBXBuildFile; fileRef = 1518E32F1422EEFC00EBA817 /* main.nu */; };
-		1518E37B1422FE3700EBA817 /* NuREPLController.h in Headers */ = {isa = PBXBuildFile; fileRef = 153923F11421C45500C8789F /* NuREPLController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		153923F31421C45500C8789F /* NuREPLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; };
 		155A19A71419AA5C00772521 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155A19A61419AA5C00772521 /* CFNetwork.framework */; };
 		159455C61421D3E0009D1DC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C01411B84C00D0C295 /* Foundation.framework */; };
-		159455D21421D42A009D1DC9 /* NuREPLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153923F21421C45500C8789F /* NuREPLController.m */; };
 		159455D31421D42A009D1DC9 /* ffi.c in Sources */ = {isa = PBXBuildFile; fileRef = 1510452E1419A6AF001D8E43 /* ffi.c */; };
 		159455D41421D42A009D1DC9 /* ffi.S in Sources */ = {isa = PBXBuildFile; fileRef = 151045301419A6AF001D8E43 /* ffi.S */; };
 		159455D51421D42A009D1DC9 /* Nu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510452A1419A0F2001D8E43 /* Nu.m */; };
@@ -26,6 +23,9 @@
 		159455D71421D43A009D1DC9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155A19A61419AA5C00772521 /* CFNetwork.framework */; };
 		159455D81421D43A009D1DC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0BE1411B84C00D0C295 /* UIKit.framework */; };
 		159455D91421D43A009D1DC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */; };
+		15A7F11914269FB60068F979 /* NuREPLController.h in Headers */ = {isa = PBXBuildFile; fileRef = 15A7F11714269FB60068F979 /* NuREPLController.h */; };
+		15A7F11A14269FB60068F979 /* NuREPLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A7F11814269FB60068F979 /* NuREPLController.m */; };
+		15A7F11B14269FB60068F979 /* NuREPLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A7F11814269FB60068F979 /* NuREPLController.m */; };
 		15F5F0BF1411B84C00D0C295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0BE1411B84C00D0C295 /* UIKit.framework */; };
 		15F5F0C11411B84C00D0C295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C01411B84C00D0C295 /* Foundation.framework */; };
 		15F5F0C31411B84C00D0C295 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5F0C21411B84C00D0C295 /* CoreGraphics.framework */; };
@@ -82,10 +82,10 @@
 		1518E38E1423032D00EBA817 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		152CBDFC14230D5000A7972F /* Pass To Nu-repl.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Pass To Nu-repl.workflow"; sourceTree = "<group>"; };
 		152CBDFD14230D5000A7972F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		153923F11421C45500C8789F /* NuREPLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuREPLController.h; sourceTree = "<group>"; };
-		153923F21421C45500C8789F /* NuREPLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuREPLController.m; sourceTree = "<group>"; };
 		155A19A61419AA5C00772521 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		159455C51421D3E0009D1DC9 /* libnurepl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnurepl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A7F11714269FB60068F979 /* NuREPLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NuREPLController.h; path = include/NuREPLController.h; sourceTree = "<group>"; };
+		15A7F11814269FB60068F979 /* NuREPLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NuREPLController.m; path = include/NuREPLController.m; sourceTree = "<group>"; };
 		15F5F0BA1411B84C00D0C295 /* nu-repl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nu-repl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F5F0BE1411B84C00D0C295 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15F5F0C01411B84C00D0C295 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,9 +181,19 @@
 			path = automator;
 			sourceTree = "<group>";
 		};
+		15A7F11414269F810068F979 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				15A7F11714269FB60068F979 /* NuREPLController.h */,
+				15A7F11814269FB60068F979 /* NuREPLController.m */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
 		15F5F0AF1411B84C00D0C295 = {
 			isa = PBXGroup;
 			children = (
+				15A7F11414269F810068F979 /* include */,
 				1518E38E1423032D00EBA817 /* README.markdown */,
 				15F5F0C41411B84C00D0C295 /* nu-repl */,
 				152CBDFB14230D5000A7972F /* automator */,
@@ -223,8 +233,6 @@
 				15F5F0D41411B84C00D0C295 /* RootViewController.m */,
 				15F5F0D61411B84C00D0C295 /* RootViewController.xib */,
 				15F5F0C51411B84C00D0C295 /* Supporting Files */,
-				153923F11421C45500C8789F /* NuREPLController.h */,
-				153923F21421C45500C8789F /* NuREPLController.m */,
 				1518E32B1422E9DA00EBA817 /* scratch.nu */,
 				1518E32F1422EEFC00EBA817 /* main.nu */,
 			);
@@ -249,7 +257,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1518E37B1422FE3700EBA817 /* NuREPLController.h in Headers */,
+				15A7F11914269FB60068F979 /* NuREPLController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,10 +371,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				159455D21421D42A009D1DC9 /* NuREPLController.m in Sources */,
 				159455D31421D42A009D1DC9 /* ffi.c in Sources */,
 				159455D41421D42A009D1DC9 /* ffi.S in Sources */,
 				159455D51421D42A009D1DC9 /* Nu.m in Sources */,
+				15A7F11B14269FB60068F979 /* NuREPLController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +388,7 @@
 				1510452B1419A0F2001D8E43 /* Nu.m in Sources */,
 				151045331419A6AF001D8E43 /* ffi.c in Sources */,
 				151045341419A6AF001D8E43 /* ffi.S in Sources */,
-				153923F31421C45500C8789F /* NuREPLController.m in Sources */,
+				15A7F11A14269FB60068F979 /* NuREPLController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +486,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "./lib/**";
+				USER_HEADER_SEARCH_PATHS = "./include/** ./lib/**";
 			};
 			name = Debug;
 		};
@@ -498,7 +506,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "./lib/**";
+				USER_HEADER_SEARCH_PATHS = "./include/** ./lib/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
