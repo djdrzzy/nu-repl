@@ -17,7 +17,7 @@
 ## For example uncomment and test out the function below:
 #(function test-output ()
 #    (set x (+ x 1))
-#    "hey hey hey" + x)
+#    (+ "hey hey hey" x))
 
 
 

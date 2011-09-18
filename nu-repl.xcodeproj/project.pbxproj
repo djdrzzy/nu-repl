@@ -81,7 +81,7 @@
 		1518E32F1422EEFC00EBA817 /* main.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.nu; sourceTree = "<group>"; };
 		1518E38E1423032D00EBA817 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		152CBDFC14230D5000A7972F /* Pass To Nu-repl.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Pass To Nu-repl.workflow"; sourceTree = "<group>"; };
-		152CBDFD14230D5000A7972F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		152CBDFD14230D5000A7972F /* README.markdown */ = {isa = PBXFileReference; path = README.markdown; sourceTree = "<group>"; };
 		155A19A61419AA5C00772521 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		159455C51421D3E0009D1DC9 /* libnurepl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnurepl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A7F11714269FB60068F979 /* NuREPLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NuREPLController.h; path = include/NuREPLController.h; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				152CBDFC14230D5000A7972F /* Pass To Nu-repl.workflow */,
-				152CBDFD14230D5000A7972F /* README */,
+				152CBDFD14230D5000A7972F /* README.markdown */,
 			);
 			path = automator;
 			sourceTree = "<group>";
