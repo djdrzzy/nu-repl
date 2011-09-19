@@ -6,7 +6,7 @@ What Is This?
 
 It is something I've made to help play around with and learn Nu (http://programming.nu/). My motivation for this was to be able to work on scripts within a project and then immediately use a key combination to send the new code over to the device to be immediately tested without recompiling. Nu works beautifully with Objective-C and has awesome script capabilities so I decided to go with that.
 
-It is Mac OS X specific. 
+It is Mac OS X / iOS specific. 
 
 How Do I Use This?
 ------------------
