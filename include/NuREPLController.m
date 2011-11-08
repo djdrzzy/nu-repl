@@ -47,7 +47,9 @@ static NuREPLController* _sharedNuREPLController = nil;
 
 -(id)init {
 	self = [super init];
-	if (self != nil) {        
+	if (self != nil) {
+        
+#ifdef DEBUG
         self.rmi = [[[RemoteMessageInterface alloc] initWithWelcomeMessage:@""
                                                                  andPrompt:@""]
                     autorelease];
@@ -56,6 +58,7 @@ static NuREPLController* _sharedNuREPLController = nil;
         self.rmi.delegate = self;
         
         [self.rmi startOnSocket:40005];
+#endif
 	}
     
 	return self;
